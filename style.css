@@ -27,7 +27,16 @@ a,
 }
 
 /* DESKTOP NAV */
-
+#desktop-nav{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: white;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+}
 nav,
 .nav-links {
   display: flex;
@@ -36,7 +45,8 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: 10vh;
+  position: sticky;
 }
 
 .nav-links {
@@ -174,6 +184,10 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.section__pic-container img {
+  border-radius: 5rem;
 }
 
 .section__text {
